@@ -37,6 +37,23 @@ def get_options(**kwargs):
     options.append(copy.deepcopy(option))
 
     option = {}
+    option["bearing_size"] = '6704'
+    option["width"] = 5
+    option["height"] = 3
+    option["depth"] = 12
+    option["extra"] = ''
+    options.append(copy.deepcopy(option))
+
+    option = {}
+    option["bearing_size"] = '6704'
+    option["width"] = 3
+    option["height"] = 3
+    option["depth"] = 9
+    option["extra"] = ''
+    option["legacy_id"] = 'oobb_bearing_plate_03_03_12_6704'
+    options.append(copy.deepcopy(option))
+
+    option = {}
     option["bearing_size"] = '6803'
     option["width"] = 3
     option["height"] = 3
@@ -70,6 +87,14 @@ def get_options(**kwargs):
     option["depth"] = 12
     option["extra"] = ''
     option["legacy_id"] = 'oobb_bearing_plate_07_05_12_6810'
+    options.append(copy.deepcopy(option))
+
+    option = {}
+    option["bearing_size"] = '6810'
+    option["width"] = 7
+    option["height"] = 5
+    option["depth"] = 15
+    option["extra"] = ''
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -148,7 +173,7 @@ def get_options(**kwargs):
     option["height"] = 3
     option["depth"] = 12
     option["extra"] = ''
-    option["plate_type"] = 'plate_90_degree'
+    option["holder_type"] = 'holder_90_degree'
     option["legacy_id"] = 'oobb_bearing_plate_jack_03_03_12_606'
     options.append(copy.deepcopy(option))
 
@@ -158,7 +183,7 @@ def get_options(**kwargs):
     option["height"] = 3
     option["depth"] = 12
     option["extra"] = 'basic'
-    option["plate_type"] = 'plate_90_degree'
+    option["holder_type"] = 'holder_90_degree'
     option["legacy_id"] = 'oobb_bearing_plate_jack_basic_03_03_12_606'
     options.append(copy.deepcopy(option))
 
@@ -170,21 +195,29 @@ def get_options(**kwargs):
     option["extra"] = 'inside_embedded_m3_nuts'
     option["inside"] = 'embedded_m3_nuts'
     option["embedded_nut_positions"] = [
-        [-6.5, 0],
-        [6.5, 0],
-        [0, -6.5],
-        [0, 6.5],
+        [-7.5, 0],
+        [7.5, 0],
+        [0, -7.5],
+        [0, 7.5],
     ]
     option["inner_joining_head"] = 'socket_cap'
     option["embedded_nut_rotation"] = 30
     option["embedded_nut_rotation_radial"] = True
     option["experimental"] = True
-    option["design_note"] = '13 mm nut spacing, rotated flats, central M6 hole retained. Approximately 0.25 mm minimum web at print clearances: experimental, physical fit and strength unverified.'
+    option["design_note"] = 'Standard 15 mm hole spacing. M3 nut pockets do not fit the 6704 inner race at these positions; retain plain M3 holes instead.'
     options.append(copy.deepcopy(option))
 
     option = {}
     option["bearing_size"] = '6705'
     option["width"] = 3
+    option["height"] = 3
+    option["depth"] = 12
+    option["extra"] = ''
+    options.append(copy.deepcopy(option))
+
+    option = {}
+    option["bearing_size"] = '6705'
+    option["width"] = 5
     option["height"] = 3
     option["depth"] = 12
     option["extra"] = ''
@@ -282,7 +315,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -306,7 +338,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -330,7 +361,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -355,7 +385,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -372,7 +401,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -387,7 +415,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -406,7 +433,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -421,7 +447,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -437,7 +462,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     option = {}
@@ -455,7 +479,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 6
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.cxnjs.com/content/150.html'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     # Standard 608: 8 mm bore, 22 mm outside diameter, 7 mm bearing width.
@@ -470,7 +493,6 @@ def get_options(**kwargs):
     option["bearing_depth"] = 7
     option["bearing_print_radial_clearance"] = 0.2
     option["bearing_dimension_source"] = 'https://www.emarketplace.in.skf.com/industrial/bearings?search=608-RSH'
-    option["interior_grid"] = 0
     options.append(copy.deepcopy(option))
 
     # Reuse the existing 6810 7 x 5 outline; only add captive-nut insides.
@@ -494,7 +516,6 @@ def get_options(**kwargs):
     ]
     option["embedded_nut_rotation"] = 30
     option["embedded_nut_rotation_radial"] = True
-    option["interior_grid"] = 0
     option["inner_joining_rotation"] = 45
     options.append(copy.deepcopy(option))
 
@@ -514,12 +535,98 @@ def get_options(**kwargs):
     ]
     option["embedded_nut_rotation"] = 30
     option["embedded_nut_rotation_radial"] = True
-    option["interior_grid"] = 0
     option["inner_joining_rotation"] = 45
     options.append(copy.deepcopy(option))
 
+    # 6810 centre ring: 30 mm bore, with the four 3 x 3 M6 corners.
+    option = {}
+    option["bearing_size"] = '6810'
+    option["width"] = 7
+    option["height"] = 5
+    option["depth"] = 12
+    option["extra"] = 'inside_hole_30_mm'
+    option["inside"] = 'hole_30_mm'
+    option["shaft"] = 'round_bore'
+    option["centre_hole_diameter"] = 30
+    # Move the M3 joins 1.5 mm inward from the half-grid positions.
+    # Full-depth nuts now clear the bearing inside and sit flush.
+    option["inner_joining_positions"] = [[0, 21], [0, -21]]
+    options.append(copy.deepcopy(option))
+
+    # Two 6704 bearings, three OOBB pitches apart on the middle row.
+    option = {}
+    option["bearing_size"] = '6704'
+    option["width"] = 8
+    option["height"] = 3
+    option["depth"] = 9
+    option["extra"] = 'double'
+    option["bearing_positions"] = [[3, 2], [6, 2]]
+    options.append(copy.deepcopy(option))
+
+    # Both outer bearing retainers belong to each continuous corner half.
+    option = {}
+    option["bearing_size"] = '6810'
+    option["width"] = 7
+    option["height"] = 5
+    option["depth"] = 12
+    option["extra"] = 'corner_bevel_50_teeth'
+    option["holder_type"] = 'holder_90_degree'
+    option["corner"] = {
+        "bearing_inner_diameter": 50,
+        "bearing_outer_diameter": 65,
+        "bearing_depth": 7,
+        "radial_clearance": 0.15,
+        "axial_clearance": 0.2,
+        "split_gap": 0.2,
+        "joining_screw_length": 25,
+        "gear_teeth": 50,
+        "gear_module": 1.5,
+        "gear_depth": 12,
+        "gear_face_width": 6,
+        "gear_backlash": 0.2,
+        "minimum_gear_gap": 1,
+        "mounting_row": 45,
+        "gear_repo": "../oomlout_oobb_gear_version_5",
+    }
+    options.append(copy.deepcopy(option))
+
+    option = {}
+    option["bearing_size"] = '6704'
+    option["width"] = 5
+    option["height"] = 3
+    option["depth"] = 12
+    option["extra"] = 'corner_bevel_30_teeth'
+    option["holder_type"] = 'holder_90_degree'
+    option["corner"] = {
+        "bearing_inner_diameter": 20,
+        "bearing_outer_diameter": 27,
+        "bearing_depth": 4,
+        "radial_clearance": 0.15,
+        "axial_clearance": 0.2,
+        "split_gap": 0.2,
+        "joining_screw_length": 25,
+        "gear_teeth": 30,
+        "gear_module": 1.5,
+        "gear_depth": 12,
+        "gear_face_width": 6,
+        "gear_backlash": 0.2,
+        "minimum_gear_gap": 1,
+        "mounting_row": 30,
+        "gear_mounts": [[-7.5, 0], [7.5, 0], [0, -7.5], [0, 7.5]],
+        "gear_mount_radius_name": "m3",
+        "gear_pad_radius": 3,
+        "gear_join_access": True,
+        "gear_repo": "../oomlout_oobb_gear_version_5",
+    }
+    options.append(copy.deepcopy(option))
+
     for option in options:
-        plate_type = option.get("plate_type", "plate")
+        # These centres either lacked joins or used off-grid joins.
+        # Use actual M3 half-grid positions, never the M6 grid corners.
+        if option["bearing_size"] in ["6808", "6810"]:
+            option.setdefault("inner_joining_positions", [[-7.5, 7.5], [7.5, -7.5]])
+
+        holder_type = option.get("holder_type", "holder")
         bearing_size = option["bearing_size"]
         width = option["width"]
         height = option["height"]
@@ -527,15 +634,11 @@ def get_options(**kwargs):
         extra = option["extra"]
 
         if bearing_size in ["6704", "6705", "6804", "6709", "6810"]:
-            option["inner_joining_rotation"] = 45
-        if bearing_size == "6709":
-            if extra == "":
-                # Four usable 15 mm grid holes, with the centre drawn below.
-                option["interior_grid"] = 3
+            option.setdefault("inner_joining_rotation", 45)
 
         option["taxonomy_1"] = "oobb"
         option["taxonomy_2"] = "part"
-        option["taxonomy_3"] = plate_type
+        option["taxonomy_3"] = holder_type
         option["taxonomy_4"] = "bearing"
         option["taxonomy_5"] = f"{bearing_size}_bearing_size"
         option["taxonomy_6"] = f"{width}_width"
@@ -547,10 +650,17 @@ def get_options(**kwargs):
             option["legacy_source"] = f"C:/gh/oomlout_oobb_version_3/things/{option['legacy_id']}"
 
         oobb_details = {}
-        oobb_details["oobb_name"] = "bearing_plate"
-        if plate_type == "plate_90_degree":
-            oobb_details["oobb_name"] = "bearing_plate_90_degree"
+        oobb_details["oobb_name"] = "bearing_holder"
+        if holder_type == "holder_90_degree":
+            oobb_details["oobb_name"] = "bearing_holder_90_degree"
+        if "corner" in option:
+            oobb_details["oobb_name"] = "bearing_holder_corner"
+            oobb_details["corner"] = copy.deepcopy(option["corner"])
+        oobb_details["holder_type"] = holder_type
+        oobb_details["mounting_minimum_web"] = option.get("mounting_minimum_web", 0.3)
         oobb_details["bearing_size"] = bearing_size
+        if "bearing_positions" in option:
+            oobb_details["bearing_positions"] = copy.deepcopy(option["bearing_positions"])
         oobb_details["width"] = width
         oobb_details["height"] = height
         oobb_details["depth"] = depth
@@ -564,7 +674,8 @@ def get_options(**kwargs):
         oobb_details["print_gap"] = option.get("print_gap", 10)
         oobb_details["interior_hole_positions"] = option.get("interior_hole_positions", [])
         oobb_details["interior_radius_name"] = option.get("interior_radius_name", "m3")
-        oobb_details["joining_tangent_clearance"] = option.get("joining_tangent_clearance", 0.01)
+        if "centre_hole_diameter" in option:
+            oobb_details["centre_hole_diameter"] = option["centre_hole_diameter"]
         if "shaft_radius" in option:
             oobb_details["shaft_radius"] = option["shaft_radius"]
             oobb_details["shaft_cut_depth"] = option["shaft_cut_depth"]
@@ -600,8 +711,10 @@ def get_options(**kwargs):
             oobb_details["bearing_depth"] = option["bearing_depth"]
         if "bearing_print_radial_clearance" in option:
             oobb_details["bearing_print_radial_clearance"] = option["bearing_print_radial_clearance"]
-        if "interior_grid" in option:
-            oobb_details["interior_grid"] = option["interior_grid"]
+        if "inner_joining_positions" in option:
+            oobb_details["inner_joining_positions"] = option["inner_joining_positions"]
+        if "inner_joining_radius" in option:
+            oobb_details["inner_joining_radius"] = option["inner_joining_radius"]
         if "inner_joining_rotation" in option:
             oobb_details["inner_joining_rotation"] = option["inner_joining_rotation"]
         if "embedded_nut_rotation_radial" in option:
